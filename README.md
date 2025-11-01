@@ -1,5 +1,29 @@
 # CS336 Spring 2025 Assignment 1: Basics
 
+## ✅ Completion Status
+
+This repository has been completed with the following achievements:
+
+1. **All unit tests pass** - The implementation successfully passes all unit tests
+2. **BPE training is functional** - BPE training can be executed using:
+   ```sh
+   uv run python tests/train_bpe.py --dataset tinystories --checkpoint_interval 1000
+   ```
+   or
+   ```sh
+   uv run python tests/train_bpe.py --dataset owt --checkpoint_interval 1000
+   ```
+3. **LLM training is functional** - Language model training can be executed using:
+   ```sh
+   uv run python -m cs336_basics.train ##for tinystories
+   ```
+   or
+   ```sh
+   uv run python -m cs336_basics.train --config owt
+   ```
+
+---
+
 For a full description of the assignment, see the assignment handout at
 [cs336_spring2025_assignment1_basics.pdf](./cs336_spring2025_assignment1_basics.pdf)
 
@@ -47,4 +71,3 @@ gunzip owt_valid.txt.gz
 
 cd ..
 ```
-
